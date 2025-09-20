@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alumno Ejemplo">
+    <meta name="description" content="Ejemplo de elementos básicos en HTML5 con botones y video">
+    <title>EjemploElementosBasicos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>Elementos básicos en HTML5</h1>
+        <p>Demostración de elementos básicos de HTML5, botones y videos</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#texto">Texto</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de texto -->
+        <section id="texto">
+            <h2>Elementos de texto</h2>
+            <p>Este es un párrafo normal.</p>
+            <p><strong>Este texto está en negrita</strong> y <em>este en cursiva</em>.</p>
+        </section>
+
+        <!-- Sección de listas -->
+        <section id="listas">
+            <h2>Listas</h2>
+            <h3>Lista desordenada:</h3>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>Paso 1</li>
+                <li>Paso 2</li>
+                <li>Paso 3</li>
+            </ol>
+        </section>
+
+        <!-- Sección de tabla -->
+        <section id="tabla">
+            <h2>Tabla de ejemplo</h2>
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Rol</th>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>22</td>
+                    <td>Frontend</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>23</td>
+                    <td>Backend</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección de imágenes -->
+        <section id="imagenes">
+            <h2>Imágenes</h2>
+            <img src="https://mmedia.notitarde.com.ve/19502/agencia-26108.jpg" alt="Logotipo de ejemplo" width="150">
+        </section>
+
+        <!-- Sección de multimedia -->
+        <section id="multimedia">
+            <h2>Objetos Multimedia</h2>
+
+            <!-- Video local -->
+            <h3>Video local (HTML5 video)</h3>
+            <video width="320" height="240" controls>
+                <source src="video/ejemplo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <!-- Video de YouTube -->
+            <h3>Video de YouTube (iframe)</h3>
+            <iframe width="928" height="522" 
+                src="https://www.youtube.com/embed/10GHKjgQIR0" 
+                title="¿Qué es HTML? bien explicado" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <!-- Audio -->
+            <h3>Audio:</h3>
+            <audio controls>
+                <source src="audio/ejemplo.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+        <!-- Sección de formularios y botones -->
+        <section id="formularios">
+            <h2>Formularios y Botones</h2>
+            
+            <!-- Botón simple -->
+            <button onclick="alert('¡Hola! Has presionado el botón')">Presiona aquí</button>
+
+            <!-- Formulario con botones -->
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Alumno Ejemplo</p>
+    </footer>
+</body>
+</html>
